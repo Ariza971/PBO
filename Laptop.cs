@@ -160,23 +160,3 @@ public class BisnisStandar : LaptopBisnis
         Console.WriteLine($"Standard Laptop Bisnis {Merek}, Mode Baterai: {BatteryMode}, Harga: {Harga:C}");
     }
 }
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Membuat objek-objek laptop
-        Laptop laptop1 = new Laptop("Asus", 800);
-        LaptopGaming laptopGaming1 = new LaptopGaming("MSI", 1200, "NVIDIA RTX 3080");
-        LaptopBisnis laptopBisnis1 = new LaptopBisnis("Dell", 1000, "Portable");
-        HighEnd laptopGaming2 = new HighEnd("Alienware", 2500, "NVIDIA RTX 3090", "Vapor Chamber");
-        BisnisPremium laptopBisnis2 = new BisnisPremium("HP", 1500, "", "Fingerprint & TPM");
-
-        // Memanggil method Info() untuk setiap objek
-        laptop1.Info();
-        laptopGaming1.Info();
-        laptopBisnis1.Info();
-        laptopGaming2.Info();
-        laptopBisnis2.Info();
-    }
-}
